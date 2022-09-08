@@ -106,3 +106,35 @@ class DataSet:
     
     def __repr__(self):
         return repr(self.examples)
+
+    #     # Create the additional method
+    # def train_validation_test_split(self, portions, shuffle=False):
+
+    #     # create variables for the amount of each set
+    #     NumTrain = portions["training"]
+    #     NumValidate = portions["validation"]
+    #     NumTest = portions["test"]
+
+    #     # check that the percentages add up
+    #     if (NumTrain + NumValidate + NumTest) != 1.00:
+    #         raise TypeError("Sorry the portion sizes do not add up to 100 percent, Please try again")
+            
+    #     if shuffle is True:
+    #         self.shuffle()
+
+    #     NumTrain = self.N - int(self.N * NumTrain)
+    #     NumValidate = self.N - int(self.N * NumValidate)
+    #     NumTest = self.N - int(self.N * NumTest)
+
+    #     # see the amounts the examples should be split into
+    #     print("Amount of examples: ", self.N)
+    #     print("Train: ", NumTrain, "\nValidate: ",NumValidate, "\nTest: ",NumTest)
+
+    #     # create datasets of the assigned amounts
+    #     train = DataSet(self.examples.iloc[range(0, NumTrain)])
+    #     validate = DataSet(self.examples.iloc[range(NumTrain, (NumTrain + NumValidate))])
+    #     test = DataSet(self.examples.iloc[range(NumTrain + NumValidate, self.N)])
+
+
+    #     # return the datasets
+    #     return train, validate, test
